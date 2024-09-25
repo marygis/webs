@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web 3.0 - Noticias Personalizadas</title>
+  <link rel="stylesheet" href="./style.css" />
+ </head>
+ <body>
+  <header>
+   <h1>Bienvenido a Noticias Personalizadas</h1>
+  </header>
+
+  <main>
+   <div id="authSection">
+    <div class="form-container">
+     <form id="loginForm">
+      <h2>Iniciar Sesión</h2>
+      <input type="email" placeholder="Correo Electrónico" required />
+      <input type="password" placeholder="Contraseña" required />
+      <button type="submit">Iniciar Sesión</button>
+     </form>
+     <form id="registerForm">
+      <h2>Registrarse</h2>
+      <input type="text" placeholder="Nombre de Usuario" required />
+      <input type="email" placeholder="Correo Electrónico" required />
+      <input type="password" placeholder="Contraseña" required />
+      <button type="submit">Registrarse</button>
+     </form>
+    </div>
+   </div>
+
+   <section id="preferencesSection" style="display: none">
+    <h2>Encuesta de Preferencias</h2>
+    <form id="preferencesForm">
+     <label for="favoriteTopic">¿Cuál es tu tema favorito?</label>
+     <select id="favoriteTopic" name="favoriteTopic" required>
+      <option value="tecnologia">Tecnología</option>
+      <option value="ciencia">Ciencia</option>
+      <option value="arte">Arte</option>
+      <option value="deportes">Deportes</option>
+      <option value="medio_ambiente">Medio Ambiente</option>
+     </select>
+
+     <label for="newsType"
+      >¿Prefieres noticias locales o internacionales?</label
+     >
+     <select id="newsType" name="newsType" required>
+      <option value="local">Local</option>
+      <option value="internacional">Internacional</option>
+     </select>
+
+     <label for="newsFrequency">¿Con qué frecuencia lees noticias?</label>
+     <select id="newsFrequency" name="newsFrequency" required>
+      <option value="diario">Diario</option>
+      <option value="semanal">Semanal</option>
+      <option value="mensual">Mensual</option>
+     </select>
+
+     <button type="submit">Guardar Preferencias</button>
+    </form>
+   </section>
+
+   <section id="contentSection" style="display: none">
+    <h2>Contenido Personalizado</h2>
+    <p id="personalizedContent"></p>
+   </section>
+  </main>
+
+  <script src="./app.js"></script>
+ </body>
+</html>

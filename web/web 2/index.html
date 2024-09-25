@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web 2.0 - Crear Artículos</title>
+  <link rel="stylesheet" href="./style.css" />
+ </head>
+ <body>
+  <header>
+   <h1>Periódico Digital 2.0</h1>
+  </header>
+
+  <main>
+   <h2>Crear Nuevo Artículo</h2>
+   <form id="articleForm">
+    <label for="title">Título del Artículo:</label>
+    <input type="text" id="title" name="title" required />
+
+    <label for="content">Contenido del Artículo:</label>
+    <textarea id="content" name="content" rows="5" required></textarea>
+
+    <label for="image">Subir Imagen (Obligatoria):</label>
+    <input type="file" id="image" name="image" accept="image/*" required />
+
+    <button type="submit">Guardar Artículo</button>
+   </form>
+
+   <h2>Artículos Creados</h2>
+   <div id="articlesContainer"></div>
+  </main>
+
+  <footer>
+   <p>Copyright © 2024 Periódico Web 2.0</p>
+  </footer>
+
+  <script src="./app.js"></script>
+ </body>
+</html>
